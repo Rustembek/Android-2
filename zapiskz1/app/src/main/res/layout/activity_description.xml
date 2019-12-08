@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Activity.DescriptionActivity">
+
+            <ImageButton
+                android:id="@+id/imagebutton_info_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="1dp"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+                <ImageView
+                    android:id="@+id/imageswitcher_image_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:src="@drawable/testimage"
+                    android:scaleType="centerCrop"
+                    />
+
+
+            <TextView
+                android:id="@+id/textview_info_name"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/whitesmoke"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/imageswitcher_image_1"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/textview_info_type"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/textview_info_geoicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/outline_place_white_48"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/textview_info_address"
+                app:layout_constraintTop_toTopOf="@id/textview_info_address"
+                app:layout_constraintBottom_toBottomOf="@id/textview_info_address"
+                />
+
+
+            <TextView
+                android:id="@+id/textview_info_address"
+                android:layout_width="215dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textColor="@color/whitesmoke"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toEndOf="@id/textview_info_geoicon"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_type"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_400"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+
+                app:layout_constraintTop_toBottomOf="@id/textview_info_address"
+                />
+
+            <TextView
+                android:id="@+id/textview_info_rating"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/yellow_700"
+
+                app:layout_constraintStart_toEndOf="@id/textview_info_address"
+                app:layout_constraintEnd_toStartOf="@id/textview_info_rates_count"
+                app:layout_constraintTop_toTopOf="@id/textview_info_address"
+                app:layout_constraintBottom_toBottomOf="@id/textview_info_address"
+                />
+
+            <TextView
+                android:id="@+id/textview_info_rates_count"
+                android:layout_width="0dp"
+
+                android:layout_height="40dp"
+                android:paddingEnd="20dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:textColor="@color/yellow_700"
+                android:paddingStart="15dp"
+
+                app:layout_constraintStart_toEndOf="@id/textview_info_rating"
+                app:layout_constraintTop_toTopOf="@id/textview_info_address"
+                app:layout_constraintBottom_toBottomOf="@id/textview_info_address"
+                />
+
+            <ImageView
+                android:id="@+id/textview_info_instagramicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal"
+                android:paddingStart="15dp"
+                android:src="@drawable/instagram64"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/textview_info_instagram"
+                app:layout_constraintEnd_toStartOf="@id/textview_info_instagram"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textview_info_instagram" />
+
+            <TextView
+                android:id="@+id/textview_info_instagram"
+                android:layout_width="215dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/whitesmoke"
+                android:textSize="14sp"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toEndOf="@id/textview_info_instagramicon"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_address"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_400"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_instagram"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/textview_info_check_rating"
+                android:layout_width="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:gravity="center|center_horizontal"
+                android:textSize="23sp"
+                android:textColor="@color/whitesmoke"
+
+                app:layout_constraintStart_toEndOf="@id/textview_info_instagram"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_address"
+                />
+
+            <ImageView
+                android:id="@+id/textview_info_timeicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal"
+                android:paddingStart="15dp"
+                android:src="@drawable/baseline_access_time_white_36"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/textview_info_time"
+                app:layout_constraintEnd_toStartOf="@id/textview_info_time"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textview_info_time" />
+
+            <TextView
+                android:id="@+id/textview_info_time"
+                android:layout_width="215dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/whitesmoke"
+                android:textSize="14sp"
+                android:paddingStart="5dp"
+                app:layout_constraintStart_toEndOf="@id/textview_info_timeicon"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_instagram"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_400"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_time"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="460dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@id/textview_info_time"
+                app:cardCornerRadius="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textview_info_masters"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Мастера"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/textview_info_time"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleview_info_masters"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="bottom"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Поделиться"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15dp"
+        android:elevation="1dp"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.app.zapiskztest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:5:5-79
+11-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:6:5-67
+12-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:7:5-76
+13-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:7:22-73
+14
+15    <application
+15-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:9:5-25:19
+16        android:allowBackup="true"
+16-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+17-->[com.android.support:support-compat:28.0.0] C:\Users\Рустем\.gradle\caches\transforms-2\files-2.1\ccf94a4f227dfa4f17156620e28a8b98\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:12:9-41
+21        android:networkSecurityConfig="@xml/network_security_config"
+21-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:13:9-69
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:14:9-54
+23        android:supportsRtl="true"
+23-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:15:9-35
+24        android:theme="@style/AppTheme" >
+24-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:16:9-40
+25        <activity
+25-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:17:9-23:20
+26            android:name="com.app.zapiskztest.Activity.MainActivity"
+26-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:17:19-75
+27            android:configChanges="orientation|screenSize" >
+27-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:17:76-122
+28            <intent-filter>
+28-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:18:13-22:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:19:17-69
+29-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:19:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:21:17-77
+31-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:21:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:24:9-141
+35            android:name="com.app.zapiskztest.Activity.DescriptionActivity"
+35-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:24:19-82
+36            android:configChanges="orientation|screenSize" />
+36-->F:\da\Android 2\Zapiskztest2\app\src\main\AndroidManifest.xml:24:83-129
+37    </application>
+38
+39</manifest>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.MainFragment">
+
+    <ImageView
+        android:id="@+id/imageview_logo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_logo2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textview_recommended"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey_600"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/grey_700"
+        android:text="Рекомендуемые"
+
+        app:layout_constraintTop_toBottomOf="@id/imageview_logo"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_400"
+
+        app:layout_constraintTop_toBottomOf="@id/textview_recommended"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_recommended"
+        android:layout_width="match_parent"
+        android:layout_height="197.5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_recommended"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textview_popular"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey_600"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/grey_700"
+        android:text="Популярные"
+        app:layout_constraintTop_toBottomOf="@id/recycleview_recommended"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_400"
+
+        app:layout_constraintTop_toBottomOf="@id/textview_popular"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_popular"
+        android:layout_width="match_parent"
+        android:layout_height="197.5dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_popular"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/textview_recently_added"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey_600"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/grey_700"
+        android:text="Недавно добавленные"
+        app:layout_constraintTop_toBottomOf="@id/recycleview_popular"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_400"
+
+        app:layout_constraintTop_toBottomOf="@id/textview_recently_added"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_recently_added"
+        android:layout_width="match_parent"
+        android:layout_height="197.5dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_recently_added"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>
